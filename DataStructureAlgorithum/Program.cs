@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to data structure algorithum");
             Console.WriteLine("Please enter an option");
-            Console.WriteLine("1:Permutation of string\n2:Binary search\n3:Insertion Sort\n4:Anagram");
+            Console.WriteLine("1:Permutation of string\n2:Binary search\n3:Insertion Sort\n4:Anagram\n5:Bubble Sort");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -37,6 +37,12 @@
                     break;
                 case 4:
                     Anagram.Anagrams();
+                    break;
+                case 5:
+                    int[] array = { 5, 9, 4, 6, 8 };
+                    BubbleSort.bubbleSort(array);
+                    Console.WriteLine("Sorted array");
+                    BubbleSort.printArray(array);
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
